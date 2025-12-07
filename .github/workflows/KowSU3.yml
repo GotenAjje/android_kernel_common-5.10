@@ -1,4 +1,4 @@
-name: KowSU3 GKI 5.10.247
+name: KowSU-Auto GKI 5.10.247
 
 on:
   workflow_dispatch:
@@ -87,7 +87,7 @@ jobs:
           # Setup KernelSU-KowSU
           rm -rf drivers/staging/kernelsu
             # Clone KernelSU KowSU GotenAjje repository directly
-          git clone https://github.com/GotenAjje/KernelSU.git -b main drivers/staging/kernelsu
+          git clone https://github.com/ramabondanp/KernelSU.git -b main drivers/staging/kernelsu
           echo "✅ KernelSU-KowSU successfully cloned"
 
       - name: Apply Compatibility Patches
